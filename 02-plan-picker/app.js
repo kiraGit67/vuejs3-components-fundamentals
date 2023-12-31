@@ -4,4 +4,8 @@ Vue.createApp({
       plans: ["The Single", "The Curious", "The Addict"],
     };
   },
-}).mount("#app");
+})
+  .component("plan", {
+    template: "#plan-template",
+  })
+  .mount("#app");
