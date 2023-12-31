@@ -6,13 +6,13 @@ html,
 }
 
 body {
+  width: 100vw;
   margin: 0;
   padding: 0;
   background-color: #d9eee8;
 }
 
 #app {
-  width: 100%;
   padding: 2.5rem 1.5rem;
 }
 
@@ -22,7 +22,6 @@ body {
 }
 
 .plan {
-  _width: 100%;
   padding: 1.25rem 1rem;
   background-color: white;
   border: 1px solid #ccc;
@@ -32,6 +31,11 @@ body {
 
 .plan + .plan {
   margin-top: 1rem;
+}
+
+.plan > .description {
+  display: flex;
+  justify-content: space-between;
 }
 
 h1.title {
@@ -53,4 +57,9 @@ h2.subtitle {
 span.title {
   color: #333;
   font-size: 1.15rem;
+}
+
+span.price {
+  color: black;
+  font-weight: 600;
 }
