@@ -1,7 +1,15 @@
 Vue.createApp({
   data() {
     return {
-      plans: ["The Single", "The Curious", "The Addict"],
+      plans: [
+        "The Single",
+        "The Curious",
+        "The Addict",
+        "The Enjoyful",
+        "The Grateful",
+        "The Hacker",
+        "The Gambler",
+      ],
     };
   },
 })
