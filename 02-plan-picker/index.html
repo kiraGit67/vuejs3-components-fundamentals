@@ -13,18 +13,17 @@
         <h1 class="title">Coffee Plans</h1>
         <h2 class="subtitle">We travel the world to source the very best single origin coffee for you.</h2>
         <div class="plans">
-            <div class="plan" v-for="plan in plans" :key="plan">
+            <div class="plan" v-for="plan in plans" :name="plan">
                 <div class="description">
                     <span class="title">{{plan}}</span>
                 </div>
             </div>
-            <plan name="The Hacker"></plan>
         </div>
     </div>
     <script type="text/x-template" id="plan-template">
         <div class="plan">
             <div class="description">
-                <span class="title"></span>
+                <span class="title">{{name}}</span>
             </div>
         </div>
     </script>
