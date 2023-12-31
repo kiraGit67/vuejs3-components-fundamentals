@@ -15,6 +15,9 @@ Vue.createApp({
 })
   .component("plan", {
     template: "#plan-template",
-    props: ["name"],
+    props: {
+      name: { type: String, default: "The Single", required: true },
+      price: { type: Number, default: 1.0, required: false },
+    },
   })
   .mount("#app");
