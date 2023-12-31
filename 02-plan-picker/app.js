@@ -2,13 +2,34 @@ Vue.createApp({
   data() {
     return {
       plans: [
-        "The Single",
-        "The Curious",
-        "The Addict",
-        "The Enjoyful",
-        "The Grateful",
-        "The Hacker",
-        "The Gambler",
+        {
+          name: "The Single",
+          price: 1.0,
+        },
+        {
+          name: "The Curious",
+          price: 1.15,
+        },
+        {
+          name: "The Addict",
+          price: 1.25,
+        },
+        {
+          name: "The Enjoyful",
+          price: 1.2,
+        },
+        {
+          name: "The Grateful",
+          price: 1.1,
+        },
+        {
+          name: "The Hacker",
+          price: 1.35,
+        },
+        {
+          name: "The Gambler",
+          price: 1.5,
+        },
       ],
     };
   },
