@@ -3,11 +3,7 @@ let PlanComponent = {
   props: {
     name: { type: String, default: "The Single", required: true },
     price: { type: Number, default: 1.0, required: false },
-  },
-  data() {
-    return {
-      selected: false,
-    };
+    selected: { type: Boolean, default: false },
   },
   methods: {
     select() {
