@@ -52,7 +52,13 @@ let PlanPickerComponent = {
           price: 1.5,
         },
       ],
+      selectedPlan: null,
     };
+  },
+  methods: {
+    selectPlan(plan) {
+      this.selectedPlan = plan;
+    },
   },
 };
 
