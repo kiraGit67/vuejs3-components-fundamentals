@@ -1,4 +1,12 @@
-Vue.createApp({
+let PlanComponent = {
+  template: "#plan-template",
+  props: {
+    name: { type: String, default: "The Single", required: true },
+    price: { type: Number, default: 1.0, required: false },
+  },
+};
+
+const app = Vue.createApp({
   data() {
     return {
       plans: [
@@ -34,13 +42,6 @@ Vue.createApp({
     };
   },
 })
-  .component("plan", {
-    template: "#plan-template",
-    props: {
-      name: { type: String, default: "The Single", required: true },
-      price: { type: Number, default: 1.0, required: false },
-    },
-  })
   .component("plan-picker", {
     template: "#plan-picker-template",
     data() {
