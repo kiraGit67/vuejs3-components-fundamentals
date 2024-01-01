@@ -43,6 +43,7 @@ const app = Vue.createApp({
   },
 })
   .component("plan-picker", {
+    components: { plan: PlanComponent },
     template: "#plan-picker-template",
     data() {
       return {
