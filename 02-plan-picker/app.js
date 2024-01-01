@@ -4,6 +4,11 @@ let PlanComponent = {
     name: { type: String, default: "The Single", required: true },
     price: { type: Number, default: 1.0, required: false },
   },
+  data() {
+    return {
+      selected: false,
+    };
+  },
 };
 
 let PlanPickerComponent = {
