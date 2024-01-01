@@ -9,6 +9,11 @@ let PlanComponent = {
       selected: false,
     };
   },
+  methods: {
+    select() {
+      this.selected = true;
+    },
+  },
 };
 
 let PlanPickerComponent = {
