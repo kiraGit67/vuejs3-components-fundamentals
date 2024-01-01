@@ -7,7 +7,6 @@ let PlanComponent = {
   },
   methods: {
     select() {
-      this.selected = true;
       this.$emit("select", this.name);
     },
   },
