@@ -20,7 +20,7 @@
         -->
     </div>
     <script type="text/x-template" id="plan-template">
-        <div class="plan" @click="select">
+        <div class="plan" :class="{'active-plan': selected}" @click="select">
             <div class="description">
                 <span class="title">{{name}}</span>
                 <span class="price">{{price}} €</span>
