@@ -12,13 +12,13 @@
     <div id="app">
         <h1>Vue.js Slots Fundamentals</h1>
         <todo-item>
-            <h2>Order WBS</h2>
+            Order WBS
         </todo-item>
     </div>
 
     <script type="text/x-template" id="todo-item-template">
         <div>
-            <input type="checkbox">
+            <input type="checkbox" v-model="done">
             <slot></slot>
         </div>
     </script>
