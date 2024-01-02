@@ -19,9 +19,15 @@
     <script type="text/x-template" id="todo-item-template">
         <div>
             <input type="checkbox" v-model="done">
-            <slot></slot>
+            <span :class="{done: done}"><slot></slot></span>
         </div>
     </script>
+    <style>
+        .done {
+            color: green;
+            text-decoration: line-through;
+        }
+    </style>
     <script src="../vue.js"></script>
     <script src="./app.js"></script>
 </body>
