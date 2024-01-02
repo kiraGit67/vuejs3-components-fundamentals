@@ -1,5 +1,5 @@
 let PlanPickerItemComponent = {
-  template: "#plan-template",
+  template: "#plan-picker-item-template",
   props: {
     name: { type: String, default: "The Single", required: true },
     price: { type: Number, default: 1.0, required: false },
