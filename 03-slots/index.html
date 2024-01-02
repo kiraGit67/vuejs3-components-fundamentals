@@ -11,15 +11,27 @@
 <body>
     <div id="app">
         <h1>Vue.js Slots Fundamentals</h1>
-        <todo-item>Order WBS</todo-item>
-        <todo-item>Zoom Meeting with JobCenter</todo-item>
-        <todo-item>Write some Job Applications</todo-item>
+        <todo-item>
+            Order WBS
+            <template v-slot:description>
+                <p>We need a WBS to find a new home.</p>
+            </template>
+        </todo-item>
+        <todo-item>
+            Zoom Meeting with JobCenter
+            <template v-slot:description>
+                <p>to check our options for finding a new job.</p>
+            </template>
+        </todo-item>
+        <todo-item>Write some Job Applications <p>to apply for a job as a web developer</p>
+        </todo-item>
     </div>
 
     <script type="text/x-template" id="todo-item-template">
         <div>
             <input type="checkbox" v-model="done">
             <span :class="{done: done}"><slot></slot></span>
+            <slot name="description"></slot>
         </div>
     </script>
     <style>
