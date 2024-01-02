@@ -13,7 +13,7 @@ let PlanPickerItemComponent = {
 };
 
 let PlanPickerComponent = {
-  components: { "plan-item": PlanPickerItemComponent },
+  components: { "plan-picker-item": PlanPickerItemComponent },
   template: "#plan-picker-template",
   data() {
     return {
