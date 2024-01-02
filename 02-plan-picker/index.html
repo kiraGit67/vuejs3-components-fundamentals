@@ -29,7 +29,7 @@
     </script>
     <script type="text/x-template" id="plan-picker-template">
         <div class="plans">
-           <plan-item v-for="plan in plans" :name="plan.name" :price="plan.price" :selected="plan.name === selectedPlan" @select="selectPlan"></plan-item> 
+           <plan-picker-item v-for="plan in plans" :name="plan.name" :price="plan.price" :selected="plan.name === selectedPlan" @select="selectPlan"></plan-picker-item> 
         </div>
     </script>
     <script src="../vue.js"></script>
