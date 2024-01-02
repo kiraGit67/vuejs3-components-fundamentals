@@ -23,7 +23,11 @@
                 <p>to check our options for finding a new job.</p>
             </template>
         </todo-item>
-        <todo-item>Write some Job Applications <p>to apply for a job as a web developer</p>
+        <todo-item>
+            Write some Job Applications
+            <template v-slot:description>
+                <p>to apply for a job as a web developer</p>
+            </template>
         </todo-item>
     </div>
 
