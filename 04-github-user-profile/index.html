@@ -21,9 +21,11 @@
         <img :src="user.avatar_url">
       </div>
       <div class="content">
-        <a :href="`https://github.com/${username}`" class="header">{{ user.name }}</a>
+        <a :href="`https://github.com/${username}`" class="header">{{ user.name }}</a><br />
+        {{user.location}}<br />
         <a :href="`https://api.github.com/users/${username}/orgs`">{{user.company}}</a><br v-if="user.company" />
-        <a :href="user.blog">{{user.blog}}</a>
+        <a :href="user.blog">{{user.blog}}</a><br />
+        <a :href="`https://api.github.com/users/${username}/events{/privacy}`">Events</a>    
         <div class="meta">
           <span class="date">Joined in {{user.created_at}}</span>
         </div>
@@ -43,6 +45,11 @@
       <div class="extra content">
         <a :href="`https://api.github.com/users/${username}?tab=following`">
           Following {{user.following}}
+        </a>
+      </div>
+      <div class="extra content">
+        <a :href="`https://api.github.com/users/${username}/repos`">
+          {{user.public_repos}} Repositories
         </a>
       </div>
     </div> 
