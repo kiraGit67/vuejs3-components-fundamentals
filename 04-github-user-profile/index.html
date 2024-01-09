@@ -2,21 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github User Profile Vue Component</title>
-    <link rel="stylesheet" href="./semantic.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github User Profile Vue Component</title>
+  <link rel="stylesheet" href="./semantic.min.css">
 </head>
 
 <body>
-    <div id="app" class="ui container">
-        <h1>GitHub User Profiles</h1>
+  <div id="app" class="ui container">
+    <h1>GitHub User Profiles</h1>
 
-    </div>
-    <script src="../vue.js"></script>
-    <script src="./axios.min.js"></script>
-    <script src="./app.js"></script>
+  </div>
+  <!-- x-template for github user card -->
+  <script type="text/x-template" id="github-user-card-template">
+    <div class="ui card">
+      <div class="image">
+        <img src="/images/avatar2/large/kristy.png">
+      </div>
+      <div class="content">
+        <a class="header">Kristy</a>
+        <div class="meta">
+          <span class="date">Joined in 2013</span>
+        </div>
+        <div class="description">
+          Kristy is an art director living in New York.
+        </div>
+      </div>
+      <div class="extra content">
+        <a>
+          <i class="user icon"></i>
+          22 Friends
+        </a>
+      </div>
+    </div> 
+  </script>
+
+  <script src="../vue.js"></script>
+  <script src="./axios.min.js"></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>
