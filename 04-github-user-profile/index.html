@@ -12,27 +12,27 @@
 <body>
   <div id="app" class="ui container">
     <h1>GitHub User Profiles</h1>
-
+    <github-user-card v-for="username in usernames" :username="username"></github-user-card>
   </div>
   <!-- x-template for github user card -->
   <script type="text/x-template" id="github-user-card-template">
     <div class="ui card">
       <div class="image">
-        <img src="/images/avatar2/large/kristy.png">
+        <img :src="user.avatar_url">
       </div>
       <div class="content">
-        <a class="header">Kristy</a>
+        <a :href="`https://github.com/${username}`" class="header">{{ user.name }}</a>
         <div class="meta">
-          <span class="date">Joined in 2013</span>
+          <span class="date">Joined in {{user.created_at}}</span>
         </div>
         <div class="description">
-          Kristy is an art director living in New York.
+          {{user.bio}}
         </div>
       </div>
       <div class="extra content">
-        <a>
+        <a :href="`https://github.com/${username}?tab=followers`">
           <i class="user icon"></i>
-          22 Friends
+          {{user.followers}} Friends
         </a>
       </div>
     </div> 
