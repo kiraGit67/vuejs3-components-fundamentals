@@ -40,6 +40,11 @@
           {{user.followers}} Friends
         </a>
       </div>
+      <div class="extra content">
+        <a :href="`https://api.github.com/users/${username}?tab=following`">
+          Following {{user.following}}
+        </a>
+      </div>
     </div> 
   </script>
 
