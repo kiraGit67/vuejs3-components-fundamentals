@@ -31,6 +31,13 @@ Vue.createApp({
           header: "Oh No!",
           text: "Your flight to New York City has just been cancelled. Look onto the departure table for an alternative flight.",
         },
+        {
+          id: 5,
+          time: "01:45 pm",
+          type: "info",
+          header: "New Status Quo:",
+          text: "Your flight to Dubai will depart in 10 minutes.",
+        },
       ],
     };
   },
