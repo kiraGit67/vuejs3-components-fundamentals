@@ -1,0 +1,27 @@
+button {
+  font-size: 1.25rem;
+  border-radius: 0;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid;
+  float: right;
+}
+
+.info > button {
+  border-color: #276f86;
+  color: #276f86;
+}
+
+.success > button {
+  border-color: #2c662d;
+  color: #2c662d;
+}
+
+.warning > button {
+  border-color: #573a08;
+  color: #573a08;
+}
+
+.error > button {
+  border-color: #9f3a38;
+  color: #9f3a38;
+}
