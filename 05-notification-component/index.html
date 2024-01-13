@@ -12,6 +12,19 @@
 <body>
     <div id="app" class="ui container">
         <h1>Notification Center</h1>
+        <notification-message class="info" header="Greeting">
+            <h5>Good Morning!</h5>
+            <p>Enjoy your flight!</p>
+        </notification-message>
+        <notification-message class="success" header="Ah YES!!">
+            <p>Your Flight will be in Time!</p>
+        </notification-message>
+        <notification-message class="warning" header="attention">
+            <p>Your Flight will be delayed for 30 minutes.</p>
+        </notification-message>
+        <notification-message class="error" header="Oh, No!!">
+            <p>Your Flight has been cancelled!</p>
+        </notification-message>
     </div>
     <script type="text/x-template" id="notification-message-template">
         <!-- Notification Message Markup -->
