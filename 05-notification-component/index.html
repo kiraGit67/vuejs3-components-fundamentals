@@ -13,6 +13,15 @@
     <div id="app" class="ui container">
         <h1>Notification Center</h1>
     </div>
+    <script type="text/x-template" id="notification-message-template">
+        <!-- Notification Message Markup -->
+    <!-- Types: info, warning, error, success -->
+    <div class="ui message" :class="type" v-if="!hidden">
+        <i class="close icon"></i>
+        <div class="header">{{ header }}</div>
+        <slot></slot>
+    </div>
+    </script>
     <script src="../vue.js"></script>
     <script src="./app.js"></script>
 </body>
