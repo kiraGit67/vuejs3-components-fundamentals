@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js 3 Notification Component</title>
+    <link rel="stylesheet" href="./semantic.min.css">
+    <link rel="stylesheet" href="./additional-styles.css">
+</head>
+
+<body>
+    <div id="app" class="ui container">
+        <h1>Notification Center</h1>
+        <notification-message class="info" header="Greeting">
+            <h5>Good Morning!</h5>
+            <p>Enjoy your flight!</p>
+        </notification-message>
+        <notification-message class="success" header="Ah YES!!">
+            <p>Your Flight will be in Time!</p>
+        </notification-message>
+        <notification-message class="warning" header="attention">
+            <p>Your Flight will be delayed for 30 minutes.</p>
+        </notification-message>
+        <notification-message class="error" header="Oh, No!!">
+            <p>Your Flight has been cancelled!</p>
+        </notification-message>
+    </div>
+    <script type="text/x-template" id="notification-message-template">
+        <!-- Notification Message Markup -->
+    <!-- Types: info, warning, error, success -->
+    <div class="ui message" :class="type">
+        <i class="close icon" v-if="!hidden" @click="hide"></i>
+        <button v-if="hidden" @click="show">Show</button>
+        <div class="header" v-if="!hidden">{{ header }}</div>
+        <slot v-if="!hidden"></slot>
+    </div>
+    </script>
+    <script src="../vue.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
