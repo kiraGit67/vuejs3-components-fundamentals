@@ -3,7 +3,8 @@ button {
   border-radius: 0;
   padding: 0.25rem 0.5rem;
   border: 2px solid;
-  float: right;
+  background-color: transparent;
+  _float: right;
 }
 
 .info > button {
@@ -11,9 +12,19 @@ button {
   color: #276f86;
 }
 
+.info > button:hover {
+  background-color: #276f86;
+  color: white;
+}
+
 .success > button {
   border-color: #2c662d;
   color: #2c662d;
+}
+
+.success > button:hover {
+  background-color: #2c662d;
+  color: white;
 }
 
 .warning > button {
@@ -21,7 +32,17 @@ button {
   color: #573a08;
 }
 
+.warning > button:hover {
+  background-color: #573a08;
+  color: white;
+}
+
 .error > button {
   border-color: #9f3a38;
   color: #9f3a38;
+}
+
+.error > button:hover {
+  background-color: #9f3a38;
+  color: white;
 }
