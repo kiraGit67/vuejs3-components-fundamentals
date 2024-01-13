@@ -10,6 +10,7 @@ button {
 .info > button {
   border-color: #276f86;
   color: #276f86;
+  transition: color 1s ease-in-out, background-color 1s ease-in-out;
 }
 
 .info > button:hover {
@@ -20,6 +21,7 @@ button {
 .success > button {
   border-color: #2c662d;
   color: #2c662d;
+  transition: color 1s ease-in-out, background-color 1s ease-in-out;
 }
 
 .success > button:hover {
@@ -30,6 +32,7 @@ button {
 .warning > button {
   border-color: #573a08;
   color: #573a08;
+  transition: color 1s ease-in-out, background-color 1s ease-in-out;
 }
 
 .warning > button:hover {
@@ -40,6 +43,7 @@ button {
 .error > button {
   border-color: #9f3a38;
   color: #9f3a38;
+  transition: color 1s ease-in-out, background-color 1s ease-in-out;
 }
 
 .error > button:hover {
