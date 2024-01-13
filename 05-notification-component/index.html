@@ -30,7 +30,7 @@
         <!-- Notification Message Markup -->
     <!-- Types: info, warning, error, success -->
     <div class="ui message" :class="type" v-if="!hidden">
-        <i class="close icon"></i>
+        <i class="close icon" @click="hide"></i>
         <div class="header">{{ header }}</div>
         <slot></slot>
     </div>
