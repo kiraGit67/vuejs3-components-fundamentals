@@ -1,4 +1,10 @@
-Vue.createApp({})
+Vue.createApp({
+  data() {
+    return {
+      h1text: "Airport Notification Center",
+    };
+  },
+})
   .component("notification-message", {
     template: "#notification-message-template",
     props: {
