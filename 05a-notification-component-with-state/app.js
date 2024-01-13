@@ -34,21 +34,9 @@ Vue.createApp({
   .component("notification-message", {
     template: "#notification-message-template",
     props: {
-      id: {
-        type: Number,
+      message: {
+        type: Object,
         required: true,
-      },
-      type: {
-        type: String,
-        default: "info",
-      },
-      header: {
-        type: String,
-        default: "Information",
-      },
-      text: {
-        type: String,
-        default: "This is an information",
       },
     },
     data() {
